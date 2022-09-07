@@ -14,9 +14,10 @@ Na versão anterior o código era simples, usamos diversas bibliotecas, algumas 
 
 <h2>Funções</h2>
 <p>
--> Criar produto em formato JSON.
--> Atualizar produto pela Key em JSON.
--> Excluir produto.
+-> Criar produto em formato JSON. - <b>Done!</b> <br>
+-> Atualizar produto pela Key em JSON. - <b>Done!</b> <br>
+-> Excluir produto. - <b>On Work!</b> <br>
+-> Vendas. - <b>On Work!</b> <br>
 </p>
 
 
