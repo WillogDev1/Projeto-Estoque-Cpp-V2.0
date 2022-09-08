@@ -1,5 +1,5 @@
 # Projeto-Estoque-Cpp-V2.0
-Projeto melhorado<br>
+Projeto melhorado, esciro em C++ usando a IDE VSCode com Windows 11<br>
 
 <h1><b>Sobre</b></h1><br>
 Na versão anterior o código era simples, usamos diversas bibliotecas, algumas delas desatualizadas e que não se usam mais. Também usamos metodo de criação em TxT oque hoje com novas tecnologias não faz muito sentido. Tudo foi escrito em um único arquivo .cpp.<br>
