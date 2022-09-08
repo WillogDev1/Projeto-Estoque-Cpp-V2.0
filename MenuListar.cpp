@@ -21,32 +21,18 @@ string MenuListar::getListar()
         {
 			lis.push_back(file.path().filename().string());
 		}
-            //string qtdAt;
 			Menu menu3(lis.size(), lis, 1, 1, 2, 1, 1);
 			aswe = menu3.select();
             nameP = lis[aswe];
-            //cout<<qtdAt + "\n";
             return nameP;
-        //Seleciona
-/*
-            ifstream fJson("C:/db_NoSQL/produtos/"+ menu3.getopt(aswe));//Local mais nome selecionado
-            stringstream buffer;
-            buffer << fJson.rdbuf();
-            auto file = nlohmann::json::parse(buffer.str());
-            string item = menu3.getopt(aswe);//Nome do que foi selecionado para item
-            cout<<"Insira quantidade atualizada\n";
-            getline(cin,qtdAt);//Pega a quantidade digitada
 
-             //Mudar valor de Quantidade
-
-             std::ofstream out("C:/db_NoSQL/produtos/" + item );//Abre o item selecionado
-             file["Quantidade"] = qtdAt;//Inseri a quantidade atualizado no Key "Quantidade":
-             out<<std::setw(4) << file <<std::endl;    
-             */      
+      
 }
 
 void MenuListar::setUpdate()
-{
+{//Implementar metodo dentro desse metodo
+	//metodo novo com construtor para pegar o valor selecionado pelo usuario e alterar, deminuir a quantidade de codigo
+	//Polimorfismo
     cout<<"Qual das opcao abaixo deseja alterar?";
     vector<string> menuAlteraVal
     {
@@ -55,7 +41,8 @@ void MenuListar::setUpdate()
         "Nome",
         "Quantidade",
         "Grupo"
-    };
+    };//Alterar para string em vez de void. Retornar valor escolhido, e usa-lo nos metodos
+	
     Menu menu4(menuAlteraVal.size(), menuAlteraVal, 1, 1, 2, 1, 1);
     aswe = menu4.select();
     //string valorSelec = menuAlteraVal[aswe]; Se caso fosse preciso selecionar valores variaveis
